@@ -8,8 +8,8 @@
 
 *A stunning interactive portfolio showcasing academic achievements and STEM passion*
 
-[![Live Demo](https://img.shields.io/badge/🌐-Live_Demo-green?style=for-the-badge&logo=vercel)](https://your-deployment-link.vercel.app)
-[![GitHub Pages](https://img.shields.io/badge/🚀-GitHub_Pages-blue?style=for-the-badge&logo=github)](https://yourusername.github.io/portfolio)
+[![Live Demo](https://img.shields.io/badge/🌐-Live_Demo-green?style=for-the-badge&logo=vercel)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![GitHub Pages](https://img.shields.io/badge/🚀-GitHub_Pages-blue?style=for-the-badge&logo=github)](https://thegoodlucks.github.io/SidaartPortfolio/)
 
 </div>
 
