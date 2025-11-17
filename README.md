@@ -1,4 +1,4 @@
-# 🚀 Sidaarthan - NUS High School Application Portfolio
+# 🚀 Sidhaarthan - NUS High School Application Portfolio
 
 <div align="center">
 
