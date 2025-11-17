@@ -59,5 +59,5 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/nush-portfolio.git
-   cd nush-portfolio
+   git clone https://github.com/thegoodlucks/SidhaartPortfolio.git
+   cd SidhaartPortfolio
