@@ -197,80 +197,7 @@
         }
 
         
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .video-card {
-            background: var(--light);
-            border-radius: 12px;
-            padding: 24px;
-            border: 1px solid #e0e0e0;
-            border-left: 5px solid var(--primary);
-            transition: all 0.3s ease;
-            cursor: pointer;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .video-card::before {
-            display: none;
-        }
-
-        .video-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(27, 94, 86, 0.15);
-        }
-
-        .video-placeholder {
-            width: 100%;
-            height: 180px;
-            background: linear-gradient(135deg, #f5f5f5, #efefef);
-            border-radius: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 16px;
-            border: 1px solid #e0e0e0;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s;
-        }
-
-        .video-card:hover .video-placeholder {
-            border-color: var(--primary);
-            background: linear-gradient(135deg, #efefef, #e8e8e8);
-        }
-
-        .video-placeholder::before {
-            display: none;
-        }
-
-        .video-title {
-            font-size: 1.15em;
-            margin-bottom: 10px;
-            color: #0d0d0d;
-            transition: color 0.3s;
-            position: relative;
-            z-index: 1;
-            font-weight: 700;
-        }
-
-        .video-card:hover .video-title {
-            color: var(--primary);
-        }
-
-        .video-description {
-            color: #333;
-            font-size: 0.95em;
-            line-height: 1.6;
-            position: relative;
-            z-index: 1;
-            font-weight: 400;
-        }
+        /* Video styles removed (Video Showcase section was deleted) */
 
         
         .achievement-list {
@@ -613,7 +540,6 @@
             </div>
             <div class="nav-links">
                 <a href="#about" class="nav-link">About</a>
-                <a href="#videos" class="nav-link">Videos</a>
                 <a href="#achievements" class="nav-link">Achievements</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -651,37 +577,7 @@
         </section>
 
         
-        <section id="videos" class="section">
-            <h2 class="section-title">
-                <span class="icon"><i class="fas fa-video"></i></span>
-                Video Showcase
-            </h2>
-            <div class="video-grid">
-                <div class="video-card" data-video="physics">
-                    <div class="video-placeholder">
-                        <span style="font-size: 3em;"><i class="fas fa-play-circle"></i></span>
-                    </div>
-                    <h3 class="video-title">Physics Experiment: Pendulum Motion</h3>
-                    <p class="video-description">Demonstrating simple harmonic motion and exploring the relationship between period and length.</p>
-                </div>
-                
-                <div class="video-card" data-video="chemistry">
-                    <div class="video-placeholder">
-                        <span style="font-size: 3em;"><i class="fas fa-play-circle"></i></span>
-                    </div>
-                    <h3 class="video-title">Chemical Reactions & Lab Techniques</h3>
-                    <p class="video-description">Exploration of chemical reactions and proper laboratory techniques through hands-on experiments and demonstrations.</p>
-                </div>
-                
-                <div class="video-card" data-video="science">
-                    <div class="video-placeholder">
-                        <span style="font-size: 3em;"><i class="fas fa-play-circle"></i></span>
-                    </div>
-                    <h3 class="video-title">Science Fair Project</h3>
-                    <p class="video-description">Presentation of my research on renewable energy solutions and sustainable technology.</p>
-                </div>
-            </div>
-        </section>
+        <!-- Video Showcase section removed as requested -->
 
        
         <section id="achievements" class="section">
@@ -833,16 +729,7 @@
     </div>
 
     
-    <div class="modal" id="videoModal">
-        <div class="modal-content">
-            <span class="close-modal" id="closeModal">&times;</span>
-            <h2 id="modalTitle">Video Title</h2>
-            <div class="video-placeholder" style="height: 300px; margin: 20px 0;">
-                <span style="font-size: 4em;"><i class="fas fa-play-circle"></i></span>
-            </div>
-            <p id="modalDescription">Video description will appear here.</p>
-        </div>
-    </div>
+    <!-- Video modal removed -->
 
     <script>
         const mathBg = document.getElementById('mathBg');
@@ -903,46 +790,7 @@
         });
 
         
-        const videoModal = document.getElementById('videoModal');
-        const closeModal = document.getElementById('closeModal');
-        const modalTitle = document.getElementById('modalTitle');
-        const modalDescription = document.getElementById('modalDescription');
-        
-        document.querySelectorAll('.video-card').forEach(card => {
-            card.addEventListener('click', () => {
-                const videoType = card.getAttribute('data-video');
-                
-                if (videoType === 'physics') {
-                    modalTitle.textContent = 'Physics Experiment: Pendulum Motion';
-                    modalDescription.textContent = 'This video demonstrates simple harmonic motion and explores the relationship between period and length in pendulum systems. Through careful experimentation and data analysis, I showcase how mathematical principles apply to physical phenomena.';
-                } else if (videoType === 'chemistry') {
-                    modalTitle.textContent = 'Chemical Reactions & Lab Techniques';
-                    modalDescription.textContent = 'This video explores fundamental chemical reactions and proper laboratory techniques through hands-on experiments. I demonstrate safety protocols, equipment usage, and data collection methods essential for scientific research. The presentation showcases various types of reactions including acid-base reactions, redox reactions, and organic chemistry principles.';
-                } else if (videoType === 'science') {
-                    modalTitle.textContent = 'Science Fair Project';
-                    modalDescription.textContent = 'This is a presentation of my research on renewable energy solutions and sustainable technology. The project explores innovative approaches to harnessing solar energy more efficiently and discusses practical applications for sustainable living.';
-                }
-                
-                videoModal.style.display = 'flex';
-                videoModal.classList.add('active');
-            });
-        });
-
-        closeModal.addEventListener('click', () => {
-            videoModal.classList.remove('active');
-            setTimeout(() => {
-                videoModal.style.display = 'none';
-            }, 400);
-        });
-
-        window.addEventListener('click', (e) => {
-            if (e.target === videoModal) {
-                videoModal.classList.remove('active');
-                setTimeout(() => {
-                    videoModal.style.display = 'none';
-                }, 400);
-            }
-        });
+        // Video modal JS removed (Video Showcase was deleted)
     </script>
 </body>
 </html>

@@ -18,7 +18,6 @@
 - **🎨 Modern Design**: Pantone 3272 & 432 color scheme with elegant gradients
 - **📱 Fully Responsive**: Perfect experience on all devices
 - **⚡ Interactive Elements**: Smooth animations and hover effects
-- **🎬 Video Showcase**: Dedicated section for project demonstrations
 - **🏆 Achievement Gallery**: Highlight academic accomplishments
 - **🔬 Skills Matrix**: Organized display of technical and scientific abilities
 
@@ -44,7 +43,6 @@
 | Section | Description | Features |
 |---------|-------------|----------|
 | **About Me** | Personal introduction & academic interests | Scientific interests, Mathematical skills |
-| **Video Showcase** | Project demonstrations | Interactive modal, Hover effects |
 | **Achievements** | Academic accomplishments | Animated cards, Detailed descriptions |
 | **Skills & Expertise** | Technical capabilities | Categorized skills, Progress indicators |
 | **Contact Information** | Reach out details | Interactive contact cards |
